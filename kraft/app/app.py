@@ -261,6 +261,8 @@ class Application(Component):
             n_proc=n_proc,
             verbose=verbose
         )
+        print("Cmd: ", end="")
+        print(cmd)
         return util.execute(cmd)
 
     @click.pass_context  # noqa: C901
